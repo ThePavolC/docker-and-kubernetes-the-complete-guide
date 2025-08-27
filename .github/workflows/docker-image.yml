@@ -25,5 +25,5 @@ jobs:
     
     steps:
     - name: Run tests
-      run: docker run --tag thepavolc/docker-react npm run test -- --coverage
+      run: docker run -e CI=true thepavolc/docker-react npm run test
     
